@@ -27,7 +27,7 @@ function Header() {
             photo: user.photoURL,
           })
         );
-        history.push("/");
+        //history.push("/");
       }
     });
   }, []);
@@ -56,7 +56,7 @@ function Header() {
 
   return (
     <Nav>
-      <Logo src="/images/logo.svg" />
+      <Logo src="/images/AszendentLogo.png" />
 
       {!userName ? (
         <LoginContainer>
@@ -78,14 +78,14 @@ function Header() {
               <img src="/images/watchlist-icon.svg" alt="" />
               <span>WATCHLIST</span>
             </NavLink>
-            <NavLink className="NavLinkStyle" to="/movies">
+            {/* <NavLink className="NavLinkStyle" to="/movies">
               <img src="/images/movie-icon.svg" alt="" />
               <span>MOVIES</span>
             </NavLink>
             <NavLink className="NavLinkStyle" to="/series">
               <img src="/images/series-icon.svg" alt="" />
               <span>SERIES</span>
-            </NavLink>
+            </NavLink> */}
           </NavMenu>
           <UserImg onClick={signOut} src={userPhoto} alt="" />
         </>
@@ -98,7 +98,8 @@ export default Header;
 
 const Nav = styled.nav`
   height: 70px;
-  background: #090b13;
+  /* background: #090b13; */
+  background: black;
   display: flex;
   align-items: center;
   padding: 0 36px;
@@ -106,7 +107,7 @@ const Nav = styled.nav`
 `;
 
 const Logo = styled.img`
-  width: 80px;
+  width: 70px;
 `;
 
 const NavMenu = styled.div`
