@@ -5,25 +5,21 @@ function Viewers() {
   return (
     <Container>
       <Wrap>
-        {/* <img src="/images/viewers-disney.png" alt="" /> */}
         <h1>FOREX</h1>
       </Wrap>
       <Wrap>
-        {/* <img src="/images/viewers-pixar.png" alt="" /> */}
         <h1>STOCKS</h1>
       </Wrap>
       <Wrap>
-        {/* <img src="/images/viewers-marvel.png" alt="" /> */}
         <h1>CRYPTO</h1>
       </Wrap>
-      {/* <Wrap>
-        <img src="/images/viewers-starwars.png" alt="" />
-        <h1>FOREX</h1>
-      </Wrap>
       <Wrap>
-        <img src="/images/viewers-national.png" alt="" />
+        <h1>NFT</h1>
+      </Wrap>
+      {/* <Wrap>
+        
         <h1>FOREX</h1>
-      </Wrap> */}
+      </Wrap>  */}
     </Container>
   );
 }

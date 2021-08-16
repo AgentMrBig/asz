@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Slider from "react-slick";
+import TVChart from "./TVChart";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -8,7 +9,8 @@ function ImgSlider() {
   let settings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 3000,
+    autoplaySpeed: 5000,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
@@ -16,13 +18,13 @@ function ImgSlider() {
   return (
     <Carousel {...settings}>
       <Wrap>
-        <img src="/images/slider-badging.jpg" alt="" />
+        <TVChart symbol="FOREXCOM:SPXUSD" />
       </Wrap>
       <Wrap>
-        <img src="/images/slider-badag.jpg" alt="" />
+        <TVChart symbol="US30USD" />
       </Wrap>
       <Wrap>
-        <img src="/images/slider-badging.jpg" alt="" />
+        <TVChart symbol="BTCUSD" />
       </Wrap>
     </Carousel>
   );
